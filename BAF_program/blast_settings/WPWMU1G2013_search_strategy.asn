@@ -1,0 +1,248 @@
+Blast4-request ::= {
+  body queue-search {
+    program "blastn",
+    service "megablast",
+    queries bioseq-set {
+      seq-set {
+        seq {
+          id {
+            local str "Query_39724"
+          },
+          descr {
+            user {
+              type str "CFastaReader",
+              data {
+                {
+                  label str "DefLine",
+                  data str ">NODE_1_length_1518_cov_5.28938"
+                }
+              }
+            },
+            molinfo {
+              biomol genomic
+            },
+            title "NODE_1_length_1518_cov_5.28938"
+          },
+          inst {
+            repr raw,
+            mol dna,
+            length 1518,
+            seq-data ncbi2na 'DFCA1F37DFE0D2C37AFA4BEB6AD0C02BD1CD38DEC5D50301
+F28802404E2F794208DA9CFE5EC5AEEBE5AC338EA89ACF93CF179817652CFAF43E437AABAB8FDC
+F3E990EDDE9F3BF39587A6142056492AE950F9B196B80CDD69BDAFD485A6D7F3CD3941E8FAC17A
+736A3C596CDB17B613DF5733C0C15AF525ACF97B3E436DE8CFC5F6F0CE76AA85EAC25978514FAD
+EB9EB3C3D6BAD3869AFB69E91EBF867945CD2901E811752451632519ADB802CD79EE5EEA5F6DA6
+C835965B4B16A3AE0015806C5B967A714E7AB1667A4ACDB733659874AF3E5A8EC579E648E964DA
+9916F653CB9F41CD769A7A9A758EBF597D165FE5E5E17776BD7A38E7AFA52969B1B965061AC1F5
+600DC6989F8C906B056000A5E79E9A6B80385B9E3AE78F15E381D49A6B025DE17BDAE2785ACD96
+C79E14E797C7DC75E6F85E3D9F60A4D04F6C17AD25E3FBDAE7A9E69F79F4D95E3AA909D7D81E96
+A17F36D25E30D78EF71A5900E4526524650E1DE6841DC5969913C34B055FF5E89D7D7917B471BA
+6A2A9FDDC0'H
+          }
+        },
+        seq {
+          id {
+            local str "Query_39725"
+          },
+          descr {
+            user {
+              type str "CFastaReader",
+              data {
+                {
+                  label str "DefLine",
+                  data str ">NODE_2_length_509_cov_1.10417"
+                }
+              }
+            },
+            molinfo {
+              biomol genomic
+            },
+            title "NODE_2_length_509_cov_1.10417"
+          },
+          inst {
+            repr raw,
+            mol dna,
+            length 509,
+            seq-data ncbi2na '8210790E36008D04E49C185427094FD6FFC50F630A1BDC1D
+EAE1DFDD3FF34280790D08CCC6310C0C1EFBE4FEF06D0831A47C4D353C75302C29010E03063E3E
+2F04613F720194CFCFF7F3A0940FFAEB0835F76E71FA38EBFF8E852C1509E107B00B15438314E0
+1C08EF5430D8EB09428CD92C0D088AF8B0CF650F53FF53FA4400'H
+          }
+        },
+        seq {
+          id {
+            local str "Query_39726"
+          },
+          descr {
+            user {
+              type str "CFastaReader",
+              data {
+                {
+                  label str "DefLine",
+                  data str ">NODE_3_length_480_cov_1.24566"
+                }
+              }
+            },
+            molinfo {
+              biomol genomic
+            },
+            title "NODE_3_length_480_cov_1.24566"
+          },
+          inst {
+            repr raw,
+            mol dna,
+            length 480,
+            seq-data ncbi2na '76DD7DC9A230BEF27B8A18FA5A73AB903BD52A3AD3AF9F41
+3CA54F1CA031FFA03BA07E90C34FCFECF27ECFF2F3F3E8F3473FE0FE0BFCCE940BEBA8336BB7AF
+29B33354BEE34EFEFF29FBF924F40BEBFACD03A73F2B87DDFAD009FF521F1044B8B4F80CDF92B3
+44FCFFECACF80E6F7BF339467E0239C6081F'H
+          }
+        },
+        seq {
+          id {
+            local str "Query_39727"
+          },
+          descr {
+            user {
+              type str "CFastaReader",
+              data {
+                {
+                  label str "DefLine",
+                  data str ">NODE_4_length_321_cov_1.13115"
+                }
+              }
+            },
+            molinfo {
+              biomol genomic
+            },
+            title "NODE_4_length_321_cov_1.13115"
+          },
+          inst {
+            repr raw,
+            mol dna,
+            length 321,
+            seq-data ncbi2na 'BFFB68BE7B12FB79FA9F6A1798112F1642E5200A27C64500
+F41FFA0060D0FE3BF4034B8FF0743410F3F63FF93EFF373E3D7A2D0D09FDF8EF2D0F4144BCDCFB
+36DCEE34EA8D9CDF80F084A74D7831018500'H
+          }
+        }
+      }
+    },
+    subject database "nt",
+    algorithm-options {
+      {
+        name "EvalueThreshold",
+        value cutoff e-value { 1, 10, 3 }
+      },
+      {
+        name "UngappedMode",
+        value boolean FALSE
+      },
+      {
+        name "PercentIdentity",
+        value real { 0, 10, 0 }
+      },
+      {
+        name "HitlistSize",
+        value integer 100
+      },
+      {
+        name "EffectiveSearchSpace",
+        value big-integer 0
+      },
+      {
+        name "DbLength",
+        value big-integer 0
+      },
+      {
+        name "WindowSize",
+        value integer 0
+      },
+      {
+        name "DustFiltering",
+        value boolean TRUE
+      },
+      {
+        name "RepeatFiltering",
+        value boolean FALSE
+      },
+      {
+        name "MaskAtHash",
+        value boolean FALSE
+      },
+      {
+        name "DustFilteringLevel",
+        value integer 20
+      },
+      {
+        name "DustFilteringWindow",
+        value integer 64
+      },
+      {
+        name "DustFilteringLinker",
+        value integer 1
+      },
+      {
+        name "Culling",
+        value integer 1
+      },
+      {
+        name "GapXDropoff",
+        value real { 6, 10, 1 }
+      },
+      {
+        name "GapXDropoffFinal",
+        value real { 1, 10, 2 }
+      },
+      {
+        name "GapExtnAlgorithm",
+        value integer 1
+      },
+      {
+        name "MismatchPenalty",
+        value integer -2
+      },
+      {
+        name "MatchReward",
+        value integer 1
+      },
+      {
+        name "GapOpeningCost",
+        value integer 0
+      },
+      {
+        name "StrandOption",
+        value strand-type both-strands
+      },
+      {
+        name "WordSize",
+        value integer 28
+      }
+    },
+    program-options {
+      {
+        name "EntrezQuery",
+        value string "txid2 [ORGN]"
+      }
+    },
+    format-options {
+      {
+        name "Web_JobTitle",
+        value string "4 sequences (NODE_1_length_1518_cov_5.28938)"
+      },
+      {
+        name "Web_OrganismName",
+        value string "bacteria (taxid:2)"
+      },
+      {
+        name "Web_NewWindow",
+        value boolean TRUE
+      },
+      {
+        name "Web_ShortQueryAdjust",
+        value boolean TRUE
+      }
+    }
+  }
+}
+
