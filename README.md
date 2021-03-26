@@ -1,3 +1,3 @@
 # Biogenic amine gene finder
-A tool that tries to pinpoint decarboxylase and transporter genes, out of illumina sequencing data, with potential to be involved in biogenic amine accumulation. 
+A tool that uses illumina sequencing data to identify decarboxylase and transporter genes potentially involved in biogenic amine accumulation. 
 Download the zip file and use Docker to run the tool.
